@@ -190,20 +190,20 @@
             transform: scale(1.03);
         }
 
-        /* Destacar tarjeta App Móvil */
-        .card.mobile-app {
+        /* Destacar aplicaciones de ancho completo */
+        .card.full-width-app {
             grid-column: 1 / -1; 
             border-top: 4px solid var(--primary-blue);
         }
 
-        .mobile-img-grid {
+        .img-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
             gap: 20px;
             margin-top: 24px;
         }
 
-        .mobile-desc {
+        .app-desc {
             color: var(--primary-dark);
             margin-bottom: 24px;
             font-size: 1rem;
@@ -418,7 +418,7 @@
             .apps-grid { gap: 20px; margin-bottom: 40px; }
             .card { padding: 20px; }
             
-            .mobile-img-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 16px;}
+            .img-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 16px;}
             
             .highlight-banner { padding: 30px 20px; margin: 40px 0; border-radius: 12px; }
             .highlight-banner h2 { font-size: 1.6rem; margin-bottom: 20px; }
@@ -458,12 +458,12 @@
         <div class="apps-grid">
             
             <!-- APP MÓVIL (Destacada) -->
-            <div class="card mobile-app">
+            <div class="card full-width-app">
                 <div class="card-header">
                     <span class="card-icon">📱</span>
                     <h3>Aplicación Móvil</h3>
                 </div>
-                <div class="mobile-desc">
+                <div class="app-desc">
                     La aplicación móvil se consolida como herramienta transaccional en terreno, permitiendo captura estructurada, generación de evidencia y sincronización en tiempo real.
                 </div>
                 <ul>
@@ -471,7 +471,7 @@
                     <li>Captura estructurada en tiempo real</li>
                     <li>Sincronización directa con plataforma</li>
                 </ul>
-                <div class="mobile-img-grid">
+                <div class="img-grid">
                     <div class="card-img-container">
                         <img src="ART.png" alt="ART" class="card-img" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjIwMHB4IiBmaWxsPSIjZjhmOWZhIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNhYWFhYWEiPkFSVC5wbmc8L3RleHQ+PC9zdmc+'">
                     </div>
@@ -484,7 +484,7 @@
 
 
             <!-- CAPACITACIONES -->
-            <div class="card">
+            <div class="card full-width-app">
                 <div class="card-header">
                     <span class="card-icon">🎓</span>
                     <h3>Capacitaciones</h3>
@@ -493,14 +493,19 @@
                     <li>Aplicación con flujos optimizados de capacitación</li>
                     <li>Experiencia guiada para el usuario</li>
                 </ul>
-                <div class="card-img-container">
-                    <img src="la capacitacion como se ve en capacitaciones.png" alt="Capacitaciones" class="card-img" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjE1MHB4IiBmaWxsPSIjZjhmOWZhIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNhYWFhYWEiPklmYWdlbiBDYXBhY2l0YWNpb25lczwvdGV4dD48L3N2Zz4='">
+                <div class="img-grid">
+                    <div class="card-img-container">
+                        <img src="inicio capacitaciones.png" alt="Inicio Capacitaciones" class="card-img">
+                    </div>
+                    <div class="card-img-container">
+                        <img src="la capacitacion como se ve en capacitaciones.png" alt="Capacitación" class="card-img">
+                    </div>
                 </div>
             </div>
 
 
             <!-- HUELLA DE CARBONO -->
-            <div class="card">
+            <div class="card full-width-app">
                 <div class="card-header">
                     <span class="card-icon">🌱</span>
                     <h3>Huella de Carbono</h3>
@@ -510,8 +515,13 @@
                     <li>Medición estructurada de emisiones</li>
                     <li>Nueva línea de negocio independiente</li>
                 </ul>
-                <div class="card-img-container">
-                    <img src="huella de carbono.png" alt="Huella de Carbono" class="card-img" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjE1MHB4IiBmaWxsPSIjZjhmOWZhIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNhYWFhYWEiPkltYWdlbiBIdWVsbGE8L3RleHQ+PC9zdmc+'">
+                <div class="img-grid">
+                    <div class="card-img-container">
+                        <img src="huella de carbono.png" alt="Dashboard Huella" class="card-img">
+                    </div>
+                    <div class="card-img-container">
+                        <img src="pantalla dos de huella de carbono.png" alt="Mis Huellas" class="card-img">
+                    </div>
                 </div>
             </div>
 
